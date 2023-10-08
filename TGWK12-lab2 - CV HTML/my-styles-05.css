@@ -1,0 +1,135 @@
+.cv{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family:sans-serif;
+    background-color: rgb(255, 165, 165);
+}
+
+.main{
+    background-color: rgb(255, 165, 165);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.left-column {
+    background-color: lightcoral;
+    width: 27%;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.left-column #contact, #about, #computer-skills,#language-other{
+    background-color: rgb(275, 185, 185);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.right-column {
+    background-color: lightcoral;
+    width: 74%; 
+    margin: 10px;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#education, #experience{
+    background-color: rgb(275, 185, 185);
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+section {
+    margin-bottom: 20px;
+}
+ul {
+    list-style-type: disc;
+    margin-left: 10px;
+}
+h1{
+    font-family: 'Playfair Display';
+    font-size: 32px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+h2{
+   font-family: 'Playfair Display';
+   font-size: 27px;
+   font-weight: 400;
+ 
+}
+h3{
+    padding: 5px;
+    font-family: 'Playfair Display';
+    font-size: 26px;
+}
+h4{
+    font-family:'Playfair Display' ;
+    font-size: 23px;
+}
+p, li{
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.image-container{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    align-items: center;
+}
+.image-container img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+@media (max-width: 550px) {
+    .column.col-4.col-md-12 {
+      width: 100% !important;
+      margin-bottom: 20px !important;
+    }
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-container img {
+    max-width: 80%;
+    height: auto;
+
+  }
+
+ 
+  @media (min-width: 768px) and (max-width: 991px) {
+    .column.col-4.col-md-12 {
+      width:  calc(50% - 10px) !important;
+      margin-right: 20px !important;
+      margin-bottom: 20px !important;
+    }
+    .column.col-8.col-md-12 {
+      width: calc(50% - 10px) !important;
+      margin-left: 20px !important;
+      margin-bottom: 20px !important;
+    }
+    
+    .columns {
+      flex-direction: row;
+    }
+    
+    .column.col-4.col-md-12 {
+      width: 50%;
+    }
+    
+    .column.col-8.col-md-12 {
+      width: 50%;
+    }
+  }
